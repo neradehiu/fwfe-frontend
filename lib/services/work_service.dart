@@ -7,7 +7,7 @@ import 'company_service.dart';
 class WorkService {
  static const String apiBaseUrl = String.fromEnvironment(
   'API_BASE_URL',
-  defaultValue: 'https://fwfe.duckdns.org/api'
+  defaultValue: 'https://fwfedevhieu.duckdns.org/api'
 );
 
   static const String baseUrl = '$apiBaseUrl/works-posted';

@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/account.dart';
 
 class AdminService {
-  final String apiBaseUrl = const String.fromEnvironment('API_BASE_URL', defaultValue: 'https://fwfe.duckdns.org/api');
+  final String apiBaseUrl = const String.fromEnvironment('API_BASE_URL', defaultValue: 'https://fwfedevhieu.duckdns.org/api');
   
   late final String baseUrl = '$apiBaseUrl/admin';
 

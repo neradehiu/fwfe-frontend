@@ -33,7 +33,7 @@ class PrivateChatService {
 
     _stompClient = StompClient(
       config: StompConfig.SockJS(
-        url: 'https://fwfe.duckdns.org/ws',
+        url: 'https://fwfedevhieu.duckdns.org/ws',
         stompConnectHeaders: {'Authorization': 'Bearer $_token'},
         webSocketConnectHeaders: {'Authorization': 'Bearer $_token'},
         onConnect: (StompFrame frame) {
@@ -144,7 +144,7 @@ class PrivateChatService {
     }
 
     final url =
-    Uri.parse('https://fwfe.duckdns.org/api/chat/mark-read/$messageId');
+    Uri.parse('https://fwfedevhieu.duckdns.org/api/chat/mark-read/$messageId');
     final response = await http.put(
       url,
       headers: {
@@ -170,7 +170,7 @@ class PrivateChatService {
     }
 
     final url = Uri.parse(
-        'https://fwfe.duckdns.org/api/chat/chat/history/private?user=$receiverUsername&limit=50');
+        'https://fwfedevhieu.duckdns.org/api/chat/chat/history/private?user=$receiverUsername&limit=50');
     final response = await http.get(
       url,
       headers: {
@@ -202,7 +202,7 @@ class PrivateChatService {
     final String encodedUsername = Uri.encodeComponent(myUsername);
 
     final uri = Uri.parse(
-        'https://fwfe.duckdns.org/api/chat/chat/private/inbox?myUsername=$encodedUsername');
+        'https://fwfedevhieu.duckdns.org/api/chat/chat/private/inbox?myUsername=$encodedUsername');
 
     final response = await http.get(
       uri,

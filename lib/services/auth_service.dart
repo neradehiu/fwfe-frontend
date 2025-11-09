@@ -8,7 +8,7 @@ class AuthService {
   // Nếu không build với --dart-define, dùng giá trị mặc định
   static const String apiBaseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'https://fwfe.duckdns.org/api'
+    defaultValue: 'https://fwfedevhieu.duckdns.org/api'
   );
 
   static const String baseUrl = '$apiBaseUrl/auth';
